@@ -1090,6 +1090,15 @@ endfunction
 autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
 
 "}}}
+" ShowMarks support "{{{
+" ---------------------------------------------------------------------
+hi! link SignColumn   LineNr
+hi! link ShowMarksHLl DiffAdd
+hi! link ShowMarksHLu DiffChange
+hi! link ShowMarksHLo DiffAdd
+hi! link ShowMarksHLm DiffChange
+
+"}}}
 " License "{{{
 " ---------------------------------------------------------------------
 "
