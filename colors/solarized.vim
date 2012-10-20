@@ -806,6 +806,14 @@ exe "hi! rubyDefine"     . s:fg_base1  .s:bg_back   .s:fmt_bold
 "hi! link rubyClassVariable     Identifier
 "hi! link rubyConstant          Type
 "}}}
+" @stephenmckinney's opinionated ruby highlighting "{{{
+" ---------------------------------------------------------------------
+" def/end keywords should look the same as control structures (e.g.
+" if/else/end)
+hi! link rubyDefine rubyControl
+" instance variables should stand out
+exe "hi! rubyInstanceVariable". s:fg_orange.s:bg_none   .s:fmt_none
+"}}}
 " haskell syntax highlighting"{{{
 " ---------------------------------------------------------------------
 " For use with syntax/haskell.vim : Haskell Syntax File
