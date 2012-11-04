@@ -1098,6 +1098,11 @@ endfunction
 autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarized | else | call SolarizedMenu() | endif
 
 "}}}
+" CommandT support "{{{
+" ---------------------------------------------------------------------
+exe "hi! CommandTSelection"  .s:fg_base3   .s:bg_blue   .s:fmt_bold
+
+"}}}
 " ShowMarks support "{{{
 " ---------------------------------------------------------------------
 hi! link SignColumn   LineNr
