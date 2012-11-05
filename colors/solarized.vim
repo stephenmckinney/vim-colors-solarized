@@ -1103,6 +1103,11 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 exe "hi! CommandTSelection"  .s:fg_base3   .s:bg_blue   .s:fmt_bold
 
 "}}}
+" CtrlP support "{{{
+" ---------------------------------------------------------------------
+exe "hi! CtrlPMatch"  .s:fg_magenta  .s:bg_none   .s:fmt_none
+
+"}}}
 " ShowMarks support "{{{
 " ---------------------------------------------------------------------
 hi! link SignColumn   LineNr
