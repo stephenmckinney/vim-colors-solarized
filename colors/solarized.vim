@@ -1100,12 +1100,13 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 "}}}
 " CommandT support "{{{
 " ---------------------------------------------------------------------
-exe "hi! CommandTSelection"  .s:fg_base3   .s:bg_blue   .s:fmt_bold
+exe "hi! CommandTSelection"  .s:fg_base3    .s:bg_blue   .s:fmt_bold
+exe "hi! CommandTCharMatched".s:fg_magenta  .s:bg_none   .s:fmt_undr
 
 "}}}
 " CtrlP support "{{{
 " ---------------------------------------------------------------------
-exe "hi! CtrlPMatch"  .s:fg_magenta  .s:bg_none   .s:fmt_none
+exe "hi! CtrlPMatch"  .s:fg_magenta  .s:bg_none   .s:fmt_undr
 
 "}}}
 " ShowMarks support "{{{
