@@ -1118,6 +1118,23 @@ hi! link ShowMarksHLo DiffAdd
 hi! link ShowMarksHLm DiffChange
 
 "}}}
+" fzf support "{{{
+" ---------------------------------------------------------------------
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'CommandTCharMatched'],
+  \ 'fg+':     ['fg', 'CommandTSelection'],
+  \ 'bg+':     ['bg', 'CommandTSelection'],
+  \ 'hl+':     ['fg', 'CommandTSelection'],
+  \ 'info':    ['fg', 'Type'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+"}}}
 " License "{{{
 " ---------------------------------------------------------------------
 "
